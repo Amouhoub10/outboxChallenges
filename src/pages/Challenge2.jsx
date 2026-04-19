@@ -2,9 +2,9 @@ import { useState } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
 import PillNav from '../components/PillNav'
 import HeroSectionV2 from '../components/heroSectionV2'
-import bgLight from '../assets/background.jpg'
-import bgDark from '../assets/backgroundDark.jpg'
-import logo from '../assets/logoNav.png'
+import bgLight from '../assets/challenge1_2/background.jpg'
+import bgDark from '../assets/challenge1_2/backgroundDark.jpg'
+import logo from '../assets/challenge1_2/logoNav.png'
 
 export default function Challenge2() {
   const [isDarkMode, setIsDarkMode] = useState(false)

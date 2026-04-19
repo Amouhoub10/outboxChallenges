@@ -1,5 +1,5 @@
 import React from 'react';
-import goalImage from '../assets/goal.png';
+import goalImage from '../assets/challenge1_2/goal.png';
 
 const About = () => {
   return (

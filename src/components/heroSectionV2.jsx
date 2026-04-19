@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import { PlayCircle } from "lucide-react";
-import phoneMockup from "../assets/phonePic.png";
+import phoneMockup from "../assets/challenge1_2/phonePic.png";
 
 export default function HeroSectionV2({ isDarkMode, language = 'en' }) {
     const containerVariants = {

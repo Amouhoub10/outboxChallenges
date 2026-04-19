@@ -1,4 +1,4 @@
-import logo from "../assets/logoNav.png"
+import logo from "../assets/challenge1_2/logoNav.png"
 export default function Nav() {
   return (
     <div className="navBar" style={{ borderRadius: "16px", padding: "16px 24px", boxShadow: "0 4px 24px rgba(0, 0, 0, 0.04)", border: "1px solid #F3F4F6", top: "-5px" }}>

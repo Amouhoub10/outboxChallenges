@@ -1,4 +1,4 @@
-import phoneMockup from "../assets/phonePic.png"
+import phoneMockup from "../assets/challenge1_2/phonePic.png"
 export default function HeroSection() {
     return (
         <div className="heroSection" style={{ display: "flex", justifyContent: "space-between", alignItems: "center", width: "100%", maxWidth: "1200px", margin: "0 auto", padding: "60px 32px" }}>

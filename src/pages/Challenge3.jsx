@@ -1,11 +1,11 @@
 import { useState } from 'react'
 import PillNav from '../components/PillNav'
-import logo from '../assets/Logo2.png'
-import bgDark from '../assets/bgChallenge3.jpg'
-import bgLight from '../assets/bgchallenge3Light.jpg'
-import phone1 from '../assets/phone1.png'
-import phone2 from '../assets/phone2.png'
-import phone3 from '../assets/phone3.png'
+import logo from '../assets/challenge3/Logo2.png'
+import bgDark from '../assets/challenge3/bgChallenge3.jpg'
+import bgLight from '../assets/challenge3/bgchallenge3Light.jpg'
+import phone1 from '../assets/challenge3/phone1.png'
+import phone2 from '../assets/challenge3/phone2.png'
+import phone3 from '../assets/challenge3/phone3.png'
 import { motion } from 'framer-motion'
 
 export default function Challenge3() {
