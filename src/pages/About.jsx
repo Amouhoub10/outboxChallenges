@@ -37,7 +37,7 @@ const About = () => {
           </div>
           <div style={{ marginBottom: '24px' }}>
             <p style={{ fontWeight: '600', marginBottom: '4px' }}>Repository :</p>
-            <a href="https://github.com/mouhoub-abderrahmane/test1" style={{ color: '#1a1a1a', textDecoration: 'none' }}>github.com/mouhoub-abderrahmane/test1</a>
+            <a href="https://github.com/Amouhoub10/outboxChallenges" style={{ color: '#1a1a1a', textDecoration: 'none' }}>github.com/Amouhoub10/outboxChallenges</a>
           </div>
           <p style={{ fontSize: '0.9rem', color: '#666' }}>You can check the results by <strong>clicking on the bar below</strong>.</p>
         </section>
