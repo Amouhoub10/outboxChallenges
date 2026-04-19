@@ -55,10 +55,7 @@ export default function Challenge2() {
           style={{
             position: 'absolute',
             inset: 0,
-            backgroundImage: `url(${bgDark})`,
-            backgroundSize: 'cover',
-            backgroundPosition: '200px right',
-            backgroundRepeat: 'no-repeat'
+            backgroundColor: '#0a0a0a'
           }}
         />
       </div>
