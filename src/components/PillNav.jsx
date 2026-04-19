@@ -62,6 +62,9 @@ export default function PillNav({
         justifyContent: 'center',
         pointerEvents: 'none',
         marginTop: 0,
+        width: '100%',
+        boxSizing: 'border-box',
+        padding: '0 12px',
       }}
     >
       <motion.div
@@ -81,6 +84,9 @@ export default function PillNav({
             : '0 8px 32px rgba(0,0,0,0.10)',
           pointerEvents: 'auto',
           position: 'relative',
+          maxWidth: '95vw',
+          overflowX: 'auto',
+          boxSizing: 'border-box',
         }}
       >
         <a href="/" style={{ display: 'flex', alignItems: 'center', gap: 10, textDecoration: 'none', marginRight: 8, flexShrink: 0 }}>
@@ -194,6 +200,7 @@ export default function PillNav({
           )}
 
           <motion.button
+            className="pillNav-sign-in"
             whileHover={{ scale: 1.04 }}
             whileTap={{ scale: 0.96 }}
             style={{

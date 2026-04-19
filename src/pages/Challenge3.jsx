@@ -54,7 +54,7 @@ export default function Challenge3() {
       backgroundSize: 'cover',
       backgroundPosition: 'center',
       backgroundRepeat: 'no-repeat',
-      height: '100vh',
+      minHeight: '100vh',
       width: '100vw',
       color: textColor,
       fontFamily: 'Inter, sans-serif',
@@ -83,7 +83,7 @@ export default function Challenge3() {
       />
 
       <main style={{
-        padding: '60px 24px 0',
+        padding: 'clamp(32px, 6vw, 60px) clamp(16px, 4vw, 24px) 0',
         maxWidth: '1200px',
         margin: '0 auto',
         textAlign: 'center',
@@ -91,7 +91,9 @@ export default function Challenge3() {
         display: 'flex',
         flexDirection: 'column',
         alignItems: 'center',
-        zIndex: 2
+        zIndex: 2,
+        width: '100%',
+        boxSizing: 'border-box'
       }}>
         <motion.h1
           initial={{ opacity: 0, y: 20 }}
@@ -152,7 +154,7 @@ export default function Challenge3() {
         </motion.button>
       </main>
 
-      <div style={{
+      <div className="c3-phones-wrapper" style={{
         position: 'absolute',
         bottom: '-250px',
         left: 0,
@@ -165,6 +167,7 @@ export default function Challenge3() {
       }}>
 
         <motion.div
+          className="c3-phone-side"
           initial={{ y: 800, opacity: 0, rotate: -5 }}
           animate={{ y: 0, opacity: 1 }}
           transition={{ duration: 1.2, delay: 0.6, ease: [0.16, 1, 0.3, 1] }}
@@ -176,7 +179,7 @@ export default function Challenge3() {
             animate={{ y: [0, -20, 0] }}
             transition={{ repeat: Infinity, duration: 5, ease: "easeInOut", delay: 1.8 }}
             style={{
-              height: 'clamp(400px, 55vh, 550px)',
+              height: 'clamp(300px, 45vh, 550px)',
               filter: 'drop-shadow(0 20px 40px rgba(0,0,0,0.3))'
             }}
           />
@@ -184,6 +187,7 @@ export default function Challenge3() {
 
 
         <motion.div
+          className="c3-phone-center"
           initial={{ y: 800, opacity: 0 }}
           animate={{ y: 0, opacity: 1 }}
           transition={{ duration: 1.2, delay: 0.8, ease: [0.16, 1, 0.3, 1] }}
@@ -195,7 +199,7 @@ export default function Challenge3() {
             animate={{ y: [0, -25, 0] }}
             transition={{ repeat: Infinity, duration: 4.5, ease: "easeInOut", delay: 2.0 }}
             style={{
-              height: 'clamp(400px, 70vh, 400px)',
+              height: 'clamp(300px, 55vh, 400px)',
               filter: 'drop-shadow(0 40px 80px rgba(0,0,0,0.5))',
               marginBottom: '60px'
             }}
@@ -204,6 +208,7 @@ export default function Challenge3() {
 
 
         <motion.div
+          className="c3-phone-side"
           initial={{ y: 800, opacity: 0, rotate: 5 }}
           animate={{ y: 0, opacity: 1 }}
           transition={{ duration: 1.2, delay: 1.0, ease: [0.16, 1, 0.3, 1] }}
@@ -215,7 +220,7 @@ export default function Challenge3() {
             animate={{ y: [0, -20, 0] }}
             transition={{ repeat: Infinity, duration: 5.5, ease: "easeInOut", delay: 2.2 }}
             style={{
-              height: 'clamp(400px, 55vh, 550px)',
+              height: 'clamp(300px, 45vh, 550px)',
               filter: 'drop-shadow(0 20px 40px rgba(0,0,0,0.3))'
             }}
           />

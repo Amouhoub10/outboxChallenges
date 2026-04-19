@@ -3,7 +3,7 @@ import goalImage from '../assets/challenge1_2/goal.png';
 
 const About = () => {
   return (
-    <div style={{
+    <div className="about-wrapper" style={{
       backgroundColor: '#ffffff',
       minHeight: '100vh',
       color: '#1a1a1a',

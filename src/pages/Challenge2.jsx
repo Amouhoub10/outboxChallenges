@@ -33,7 +33,7 @@ export default function Challenge2() {
   }
 
   return (
-    <div style={{ position: 'relative', minHeight: '100vh', overflowX: 'hidden' }}>
+    <div style={{ position: 'relative', minHeight: '100vh', overflowX: 'hidden', boxSizing: 'border-box' }}>
       <div style={{ position: 'absolute', inset: 0, zIndex: -2 }}>
         <motion.div
           initial={false}
@@ -55,7 +55,10 @@ export default function Challenge2() {
           style={{
             position: 'absolute',
             inset: 0,
-            backgroundColor: '#0a0a0a'
+            backgroundImage: `url(${bgDark})`,
+            backgroundSize: 'cover',
+            backgroundPosition: '200px right',
+            backgroundRepeat: 'no-repeat'
           }}
         />
       </div>

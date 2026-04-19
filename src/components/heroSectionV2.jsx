@@ -33,8 +33,8 @@ export default function HeroSectionV2({ isDarkMode, language = 'en' }) {
     };
 
     return (
-        <div className="heroSection" style={{ display: "flex", justifyContent: "space-between", alignItems: "center", width: "100%", maxWidth: "1200px", margin: "0 auto", padding: "60px 32px" }}>
-            <div style={{ display: "flex", flexDirection: "column", gap: "28px", width: "50%", paddingRight: "40px" }}>
+        <div className="heroSection" style={{ display: "flex", flexWrap: "wrap", justifyContent: "space-between", alignItems: "center", width: "100%", maxWidth: "1200px", margin: "0 auto", padding: "60px 32px", boxSizing: "border-box" }}>
+            <div style={{ display: "flex", flexDirection: "column", gap: "28px", width: "min(50%, 560px)", minWidth: "280px", flex: "1 1 280px", paddingRight: "40px", boxSizing: "border-box" }}>
                 <motion.div variants={itemVariants} animate={{ backgroundColor: heroTheme.cardBg, borderColor: heroTheme.cardBorder }} style={{ display: "flex", flexDirection: "column", gap: "2px", borderRadius: "12px", backdropFilter: "blur(10px)", border: "1px solid", boxShadow: "0 8px 32px rgba(0, 0, 0, 0.05)", width: "fit-content", padding: "10px 16px" }}>
                     <div style={{ display: "flex", alignItems: "center", gap: "8px" }}>
                         <motion.p animate={{ color: heroTheme.cardText }} style={{ margin: 0, fontFamily: "Inter, sans-serif", fontWeight: "700", fontSize: "14px" }}>4.9</motion.p>
@@ -60,7 +60,7 @@ export default function HeroSectionV2({ isDarkMode, language = 'en' }) {
                     <motion.p animate={{ color: heroTheme.subtitle }} style={{ margin: 0, fontFamily: "Inter, sans-serif", fontSize: "12px", fontWeight: "500" }}>{language === 'fr' ? 'Approuvé par des milliers' : 'Trusted by Thousands'}</motion.p>
                 </motion.div>
 
-                <motion.h1 variants={itemVariants} className="title" animate={{ color: heroTheme.title }} style={{ position: "relative", zIndex: 10, fontSize: "68px", fontWeight: "600", letterSpacing: "-2px", margin: 0, lineHeight: "1.1" }}>
+                <motion.h1 variants={itemVariants} className="title" animate={{ color: heroTheme.title }} style={{ position: "relative", zIndex: 10, fontSize: "clamp(38px, 5.5vw, 68px)", fontWeight: "600", letterSpacing: "-2px", margin: 0, lineHeight: "1.1" }}>
                     {language === 'fr' ? (
                         <>Gérez votre <span className="gradient-text italic" style={{ fontWeight: "400", letterSpacing: "-1px" }}>Argent </span>avec Clarté <br />
                             et <span className="gradient-text italic" style={{ fontWeight: "400", letterSpacing: "-1px" }}>Contrôle</span></>
@@ -98,7 +98,7 @@ export default function HeroSectionV2({ isDarkMode, language = 'en' }) {
                 </motion.div>
             </div>
 
-            <div style={{ display: "flex", justifyContent: "center", alignItems: "center", width: "50%", position: "relative" }}>
+            <div style={{ display: "flex", justifyContent: "center", alignItems: "center", width: "min(50%, 560px)", minWidth: "260px", flex: "1 1 260px", position: "relative" }}>
                 <motion.div
                     animate={{ background: `radial-gradient(circle, ${heroTheme.glow} 0%, rgba(139,92,246,0) 70%)` }}
                     transition={{ duration: 1.5 }}
