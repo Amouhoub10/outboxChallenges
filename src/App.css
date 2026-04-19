@@ -126,6 +126,14 @@
     .pillNav-wrapper nav a:nth-child(n+5) {
         display: none;
     }
+
+    .c3-phone-side {
+        display: none !important;
+    }
+
+    .c3-phones-wrapper {
+        bottom: -180px !important;
+    }
 }
 
 
@@ -239,7 +247,7 @@
 
 
     .c3-phones-wrapper {
-        bottom: -280px !important;
+        bottom: -150px !important;
     }
 
     .c3-phone-side {
@@ -276,7 +284,7 @@
 
 
     .c3-phones-wrapper {
-        bottom: -300px !important;
+        bottom: -120px !important;
     }
 }
 

@@ -179,7 +179,7 @@ export default function Challenge3() {
             animate={{ y: [0, -20, 0] }}
             transition={{ repeat: Infinity, duration: 5, ease: "easeInOut", delay: 1.8 }}
             style={{
-              height: 'clamp(300px, 45vh, 550px)',
+              height: 'clamp(200px, 45vh, 500px)',
               filter: 'drop-shadow(0 20px 40px rgba(0,0,0,0.3))'
             }}
           />
@@ -199,7 +199,7 @@ export default function Challenge3() {
             animate={{ y: [0, -25, 0] }}
             transition={{ repeat: Infinity, duration: 4.5, ease: "easeInOut", delay: 2.0 }}
             style={{
-              height: 'clamp(300px, 55vh, 400px)',
+              height: 'clamp(250px, 55vh, 400px)',
               filter: 'drop-shadow(0 40px 80px rgba(0,0,0,0.5))',
               marginBottom: '60px'
             }}
@@ -220,7 +220,7 @@ export default function Challenge3() {
             animate={{ y: [0, -20, 0] }}
             transition={{ repeat: Infinity, duration: 5.5, ease: "easeInOut", delay: 2.2 }}
             style={{
-              height: 'clamp(300px, 45vh, 550px)',
+              height: 'clamp(200px, 45vh, 500px)',
               filter: 'drop-shadow(0 20px 40px rgba(0,0,0,0.3))'
             }}
           />
